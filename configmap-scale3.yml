@@ -21,7 +21,7 @@ jobs:
     - objectTemplate: "https://raw.githubusercontent.com/cloud-bulldozer/cluster-perf-ci/master/templates/configmap-scale/configmap.yml"
       replicas: 9000
       inputVars:
-        data_length: 5000
+        data_length: 20000
 
   - name: delete-stage-1
     waitForDeletion: false
@@ -41,7 +41,7 @@ jobs:
     - objectTemplate: "https://raw.githubusercontent.com/cloud-bulldozer/cluster-perf-ci/master/templates/configmap-scale/configmap.yml"
       replicas: 12600
       inputVars:
-        data_length: 6000
+        data_length: 40000
 
   - name: delete-stage-2
     waitForDeletion: false
@@ -61,7 +61,7 @@ jobs:
     - objectTemplate: "https://raw.githubusercontent.com/cloud-bulldozer/cluster-perf-ci/master/templates/configmap-scale/configmap.yml"
       replicas: 16200
       inputVars:
-        data_length: 7000
+        data_length: 60000
 
   - name: delete-stage-3
     waitForDeletion: false
